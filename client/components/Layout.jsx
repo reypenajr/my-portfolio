@@ -23,7 +23,6 @@ export default function Layout() {
         <div className='homeMenu'>
           <Link to="/" className={`navBarMenuItem ${isActive('/') ? 'active' : ''}`}>Home</Link>
           <Link to="/about" className={`navBarMenuItem ${isActive('/about') ? 'active' : ''}`}>About</Link>
-          <Link to="/education" className={`navBarMenuItem ${isActive('/education') ? 'active' : ''}`}>Education</Link>
           <Link to="/project" className={`navBarMenuItem ${isActive('/project') ? 'active' : ''}`}>Project</Link>
           <Link to="/services" className={`navBarMenuItem ${isActive('/services') ? 'active' : ''}`}>Services</Link>
           <Link to="/contact" className={`navBarMenuItem ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
