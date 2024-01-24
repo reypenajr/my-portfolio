@@ -1,15 +1,21 @@
+/**
+ * index.css
+ * Reynaldo Jr Pena
+ * 301354757
+ * January 24, 2024
+ */
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
     font-weight: 400;
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
    font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
   a {
     font-weight: 500;
     color: #646cff;
@@ -20,7 +26,10 @@
   }
   body {
     margin: 0;
-   
+    background: rgb(30,30,30);   
+    color: white;
+    overflow:hidden;
+    overflow-y: scroll;
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
@@ -35,7 +44,7 @@
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
-    font-family: inherit;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;    
     background-color: #1a1a1a;
     cursor: pointer;
     transition: border-color 0.25s;
@@ -59,7 +68,409 @@
       background-color: #f9f9f9;
     }
   }
-  nav {
-  float:right;
-  font-size:x-large;
+
+  nav{
+    background: rgb(30,30,30);
+    height: 5rem;
+    width: 100vw;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;  
+    top: 0;
+    z-index: 3;
   }
+
+  .logo{
+    object-fit: cover;
+    height: 7rem;
+    width: 8rem;
+  }
+
+  .navBarMenuItem{
+    margin: 1rem;
+    cursor: pointer;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+
+  .contactMenuBtn{
+    background: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1 1rem;
+    border-radius: 1rem;
+  }
+
+  .contactMenuBtn a{
+    
+    text-decoration: none;
+    color: inherit;
+    color: black;
+    font-size: 0.90rem;
+  }
+
+  .contactBtnImg{
+    background: white;
+    margin: 0 0.25rem;
+    height: 1rem;
+  }
+  .homeMenuImg{
+    object-fit: cover;
+    height: 2rem;
+    width: 1rem;
+    margin: 1rem;
+  }
+
+  .navBarMenuItem:hover{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+  }
+
+  /* HOME SECTION*/
+
+  #home{
+    height: 80vh;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+
+  .bg,.aboutBg{
+    position: absolute;
+    top: -5rem;
+    right: 0;
+    z-index: 0;
+    object-fit: cover;
+    height: 100vh;
+  }
+  
+  .homeContent{
+    height: 80vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; 
+    z-index: 1; 
+  }
+
+  .hello, .aboutName, .aboutMe{
+    font-size: 1.75rem;
+    font-weight: 100;
+    max-width: 50rem;
+    z-index: 1; 
+  }
+
+  .introName, .aboutName{
+    color: yellow;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .introSpeech{
+    font-size: medium;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+  }
+  
+  .btn{
+    background: white;
+    margin: 2rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .btnImg, .resumeBtn, .newTab{
+    object-fit: cover;
+    margin: 0 0.50rem;
+    height: 1.5rem;
+    
+  }
+
+  @media screen and (max-width: 840px){
+    .bg,.aboutBg{
+      right: -10vw;
+    }
+    .homeContent{
+      font-size: 10vw;
+    }
+    .hello{
+      font-size: 4.5vw;
+    }
+  }
+  @media screen and (max-width: 480px){
+    .bg,.aboutBg{
+      right: -130vw;
+    }
+  }
+  
+/*ABOUT ME SECTION*/
+
+#about{
+  height: calc(100-vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.aboutContent {
+  height: 70vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0 0; 
+}
+
+.resumeBtn{
+  width: 13rem;
+  height: 4rem;
+  font-size: 1rem;
+  background: white;
+  color: black;
+  margin: 0 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+/*PROJECTS SECTION*/
+#project, #services{
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sectionTitle, .servicesTitle{
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 0.9rem;
+  min-width: 51rem;
+  padding: 0 2rem;
+}
+
+.projectList, .servicesList{
+  margin: 1.5rem;
+  width: 100vw;
+  min-width: 80%;
+  text-align: left;
+}
+
+.projectItem{
+  display: flex;
+  margin: 3rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(50,50,50);
+  align-items: center; 
+  max-width: 100rem;
+  height: 10rem;
+}
+
+.projectImg{
+  position:relative;
+  object-fit:cover;
+  height: 12rem; 
+  width: 22rem;  
+  float: left;
+  margin-left: 25rem;
+  margin-right: 2rem;
+}
+
+.projectImgInkPanda{
+  position:relative;
+  float: left;
+  object-fit: cover;
+  height: 13rem; 
+  width: 13rem;  
+  margin-left: 30rem;
+  margin-right: 6rem;
+}
+
+.projectItemText > p, .servicesItemText > p{
+  position: relative;
+  font-size: 0.75rem;
+  font-weight: 200;
+  margin-left: 1rem; 
+  max-width: 35rem;
+}
+
+.projectItemText>h2, .servicesItemText>h2{
+  margin-left: 1rem;
+  max-width: 35rem;
+  position: relative;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 720px){
+  .projectItemText>p
+  {
+    font-size: 2vw;
+  }
+}
+
+/*SERVICES Section*/
+.servicesImg {
+    position:relative;
+    object-fit:cover;
+    height: 9rem; 
+    width: 9rem;  
+    float: left;
+    margin-left: 3rem;
+    margin-right: 5rem; 
+  }
+
+  
+
+#services {
+  text-align: center; 
+}
+
+
+.servicesList {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.servicesItem{
+  display: flex;
+  margin: 3rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(50,50,50);
+  align-items: center; 
+  max-width: 100rem;
+  height: 15rem;
+  width: 45%; 
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.serviceItemText {
+  flex: 1;
+  text-align: left; 
+}
+
+.serviceItemText h2 {
+  margin-bottom: 10px;
+}
+
+.serviceItemText p {
+  columns: 2;
+  column-gap: 20px;
+  width: 200rem;
+  margin: 0;
+}
+
+.servicesImg {
+  max-width: 10rem;
+  margin-right: 5rem;
+}
+
+/* CONTACT SECTION */
+#contact{
+  width: 100vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactTitle{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contactDesc{
+  padding: 1rem;
+  font-size: medium;
+  font-weight: 300;
+}
+
+.contactForm{
+  margin: 1rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  max-width: 60rem;
+}
+
+.name, .email, .msgBox{
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40,40,40);
+}
+
+.submitBtn{
+  background: white;
+  border: none;
+  color: black;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding: 0.75rem 3.5rem;
+}
+
+.links{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.link{
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.75rem;
+}
+
+.active{
+  color: yellow;
+  border-bottom: 3px solid yellow;
+  padding-bottom: 0.5rem;
+}

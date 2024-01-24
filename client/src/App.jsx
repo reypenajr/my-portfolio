@@ -1,3 +1,9 @@
+/**
+ * App.jsx
+ * Reynaldo Jr Pena
+ * 301354757
+ * January 24, 2024
+ */
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 //import { ThemeProvider } from '@material-ui/styles';
