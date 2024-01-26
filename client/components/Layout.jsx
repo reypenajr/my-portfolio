@@ -8,6 +8,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../src/assets/ReynaldoLogo.png';
 import contactMeImg from '../src/assets/contactlogo.png';
+import wallpaperbg from '../src/assets/bg.png'
 
 export default function Layout() {
   const location = useLocation();
