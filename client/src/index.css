@@ -26,7 +26,7 @@
   }
   body {
     margin: 0;
-    background: rgb(30,30,30);   
+    background: url('src/assets/bg.png');
     color: white;
     overflow:hidden;
     overflow-y: scroll;
