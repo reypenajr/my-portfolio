@@ -6,7 +6,7 @@
  */
 import bg from '../src/assets/mypic.png';
 import { Link } from 'react-router-dom';
-import resume from '../src/assets/myResume.pdf';
+import resume from '../src/assets/resume.pdf';
 import newTab from '../src/assets/newTab.png';
 export default function About() {
       return (
