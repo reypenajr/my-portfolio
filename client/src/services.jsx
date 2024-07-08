@@ -16,7 +16,7 @@ export default function Services() {
     return (
       <>
 	  <section id="services">
-		<span className="servicesTitle">Services I Offer</span>
+		<span className="servicesTitle">My Skills</span>
 		<div className="servicesList">
 			<div className="servicesItem">
 				<img src={programming} alt="" className='servicesImg'/>
@@ -26,7 +26,10 @@ export default function Services() {
 						<li>Java</li>
 						<li>C#</li>
 						<li>C++</li>
-						<li>Android Studio</li>
+						<li>Kotlin</li>
+						<li>Python</li>
+						<li>WPF</li>
+						<li>JavaFX</li>
 				</div>
 			</div>
 			<div className="servicesItem">
@@ -39,7 +42,9 @@ export default function Services() {
 						<li>Javascript</li>
 						<li>REACT</li>
 						<li>Angular</li>
-						<li>Spring Boot</li>
+						<li>Spring</li>
+						<li>Postman</li>
+						<li>GitHub</li>
 				</div>
 			</div>
 			<div className="servicesItem">
@@ -57,7 +62,8 @@ export default function Services() {
 				<div className="serviceItemText">
 					<h2>Design</h2>
 					<p>I have experience in doing UI/UX and graphic designing using: </p>
-						<li>Photoshop</li>
+						<li>Adobe Photoshop</li>
+						<li>Adobe XD</li>
 						<li>Figma</li>
 						<li>Canva</li>
 						<li>Invision</li>

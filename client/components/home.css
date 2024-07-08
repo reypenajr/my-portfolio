@@ -1,0 +1,30 @@
+/* home.css */
+
+#home {
+    position: relative;
+    height: 100vh; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.bgContainer {
+    position: absolute;
+    top: 0;
+    right: 0; /* Position on the right side */
+    width: 100%; /* Adjust width as needed */
+    height: 100%;
+    display: flex;
+    overflow: hidden; /* Ensure overflow is hidden to prevent content overflow */
+}
+
+.bg {
+    flex: 1 0 100%;
+    object-fit: cover; /* Ensure images cover the entire container */
+    transition: opacity 1s ease-in-out; /* Adjust timing for fading animation */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.bg.active {
+    opacity: 1;
+    visibility: visible;
+}

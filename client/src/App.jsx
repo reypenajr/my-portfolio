@@ -11,7 +11,7 @@ import MainRouter from '../MainRouter';
 //import Contact from './contact'
 //import theme from '../theme';
 //import { hot } from 'react-hot-loader'
-const App = () => {
+const App = () => {
   return (
     <Router>
       
@@ -20,4 +20,4 @@ import MainRouter from '../MainRouter';
     </Router>
   );
 };
-export default App;
+export default App;
